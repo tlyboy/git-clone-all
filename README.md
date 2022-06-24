@@ -20,10 +20,6 @@ Options:
   -h, --help     display help for command
 ```
 
-```bash
-git-clone-all user
-```
-
 ## License
 
 [MIT](https://opensource.org/licenses/MIT) © Guany
