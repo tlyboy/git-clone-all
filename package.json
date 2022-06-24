@@ -1,10 +1,11 @@
 {
   "name": "git-clone-all",
   "version": "1.0.0",
-  "description": "🛠️ Git clone all repositories",
+  "description": "Git clone all repositories",
   "keywords": [
     "git",
-    "ssh"
+    "ssh",
+    "git-clone-all"
   ],
   "homepage": "https://github.com/tlyboy/git-clone-all#readme",
   "bugs": "https://github.com/tlyboy/git-clone-all/issues",
@@ -20,7 +21,9 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "commander": "^9.3.0"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",

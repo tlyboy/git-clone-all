@@ -10,6 +10,16 @@ npm install -g git-clone-all
 
 ## Usage
 
+```text
+Usage: git-clone-all [options] <user>
+
+Git clone all repositories
+
+Options:
+  -V, --version  output the version number
+  -h, --help     display help for command
+```
+
 ```bash
 git-clone-all user
 ```
