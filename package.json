@@ -1,0 +1,29 @@
+{
+  "name": "git-clone-all",
+  "version": "1.0.0",
+  "description": "🛠️ Git clone all repositories",
+  "keywords": [
+    "git",
+    "ssh"
+  ],
+  "homepage": "https://github.com/tlyboy/git-clone-all#readme",
+  "bugs": "https://github.com/tlyboy/git-clone-all/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlyboy/git-clone-all.git"
+  },
+  "license": "MIT",
+  "author": "Guany",
+  "type": "module",
+  "bin": "./cli.js",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "prettier": "^2.7.1"
+  }
+}
