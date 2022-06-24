@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import fs from 'fs'
 import { Command } from 'commander'
 import chalk from 'chalk'
