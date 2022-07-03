@@ -3,11 +3,10 @@
 import fs from 'fs'
 import { Command } from 'commander'
 import chalk from 'chalk'
-import axios from 'axios'
-import { execSync } from 'child_process'
 
-const packageJson = JSON.parse(fs.readFileSync(new URL('./package.json', import.meta.url)))
-const { name, version, description } = packageJson
+import main from './main.js'
+
+const { name, description, version, gitCloneAll } = main
 
 const program = new Command()
 
@@ -17,17 +16,7 @@ program
   .version(chalk.magenta(version))
   .argument('user')
   .action(async user => {
-    const { data } = await axios.get(`https://api.github.com/users/${user}/repos`)
-
-    if (data) {
-      const res = data.map(element => {
-        return element.ssh_url
-      })
-
-      res.forEach(element => {
-        execSync(`git clone ${element}`)
-      })
-    }
+    gitCloneAll(user)
   })
 
 program.parse()
