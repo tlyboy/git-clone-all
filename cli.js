@@ -1,22 +1,20 @@
 #!/usr/bin/env node
 
-import fs from 'fs'
 import { Command } from 'commander'
 import chalk from 'chalk'
 
-import main from './main.js'
-
-const { name, description, version, gitCloneAll } = main
+import pkg from './pkg.js'
+import git from './git.js'
 
 const program = new Command()
 
 program
-  .name(chalk.cyan(name))
-  .description(chalk.green(description))
-  .version(chalk.magenta(version))
+  .name(pkg.name)
+  .description(pkg.description)
+  .version(pkg.version)
   .argument('user')
   .action(async user => {
-    gitCloneAll(user)
+    await git.cloneAll(user)
   })
 
 program.parse()

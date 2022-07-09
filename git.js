@@ -2,7 +2,7 @@ import axios from 'axios'
 import { execSync } from 'child_process'
 
 export default {
-  async gitCloneAll(user) {
+  async cloneAll(user) {
     const { data } = await axios.get(`https://api.github.com/users/${user}/repos`)
 
     if (data) {
