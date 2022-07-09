@@ -13,7 +13,7 @@ npm install -g git-clone-all
 ```text
 Usage: git-clone-all [options] <user>
 
-Git clone all repositories
+🛠️  Git clone all repositories
 
 Options:
   -V, --version  output the version number

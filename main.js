@@ -1,7 +1,7 @@
 import pkg from './pkg.js'
-import git from './git.js'
+import gitCloneAll from './git-clone-all.js'
 
 export default {
   ...pkg,
-  ...git
+  gitCloneAll
 }
