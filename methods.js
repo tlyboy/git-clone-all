@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { execaCommandSync } from 'execa'
 
-async function gitCloneAll(username) {
+export async function gitCloneAll(username) {
   const { data: repos } = await axios.get(`https://api.github.com/users/${username}/repos`)
 
   if (repos) {
@@ -14,5 +14,3 @@ async function gitCloneAll(username) {
     })
   }
 }
-
-export { gitCloneAll }
