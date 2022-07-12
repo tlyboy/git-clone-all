@@ -1,3 +1,3 @@
-import actions from './actions.js'
+import { gitCloneAll } from './methods.js'
 
-export default actions.gitCloneAll
+export default gitCloneAll
