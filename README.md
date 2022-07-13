@@ -20,14 +20,6 @@ Options:
   -h, --help     display help for command
 ```
 
-```bash
-npm install git-clone-all
-```
-
-```javascript
-import gitCloneAll from 'git-clone-all'
-```
-
 ## License
 
 [MIT](https://opensource.org/licenses/MIT) © Guany

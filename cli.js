@@ -3,8 +3,8 @@
 import { Command } from 'commander'
 import chalk from 'chalk'
 
-import { name, version, description } from './data.js'
-import { gitCloneAll } from './methods.js'
+import { name, version, description } from './constants.js'
+import { gitCloneAll } from './actions.js'
 
 const program = new Command()
 

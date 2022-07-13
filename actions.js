@@ -11,6 +11,7 @@ export async function gitCloneAll(username) {
 
     sshUrls.forEach(sshUrl => {
       execaCommandSync(`git clone ${sshUrl}`, { stdio: 'inherit' })
+      console.log('')
     })
   }
 }
