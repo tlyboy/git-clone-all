@@ -1,6 +1,6 @@
 {
   "name": "git-clone-all",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Git clone all repositories",
   "keywords": [
     "git",
@@ -17,6 +17,9 @@
   "author": "Guany",
   "type": "module",
   "bin": "./cli.js",
+  "files": [
+    "*.js"
+  ],
   "scripts": {
     "format": "prettier --write ."
   },
