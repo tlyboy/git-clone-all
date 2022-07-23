@@ -1,8 +1,10 @@
 import axios from 'axios'
 import { execaCommandSync } from 'execa'
 
+axios.defaults.baseURL = 'https://api.github.com/'
+
 export async function gitCloneAll(username) {
-  const { data: repos } = await axios.get(`https://api.github.com/users/${username}/repos`)
+  const { data: repos } = await axios.get(`users/${username}/repos`)
 
   if (repos) {
     const sshUrls = repos.map(repo => {

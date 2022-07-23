@@ -1,6 +1,6 @@
 {
   "name": "git-clone-all",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Git clone all repositories",
   "keywords": [
     "git",
@@ -23,11 +23,11 @@
   "dependencies": {
     "axios": "^0.27.2",
     "chalk": "^5.0.1",
-    "commander": "^9.3.0",
+    "commander": "^9.4.0",
     "execa": "^6.1.0"
   },
   "devDependencies": {
-    "@types/node": "^18.0.3",
+    "@types/node": "^18.0.6",
     "prettier": "^2.7.1"
   }
 }
